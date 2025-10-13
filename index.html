@@ -1,369 +1,66 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnologia-gamer</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia-gamer</title>
 
-<!--ingresamos a la pagina de bootstrap copiamos los siguinetes  link bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-<!-- LINK CSS ESTILOS -->
-    <link rel="stylesheet" href="./static/css/Estilos.css">
-    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="./static/css/Estilos.css">
+    </head>
 <body>
-    <!-- div.container>div.row>header>img+h1 para sacar el div class -->
-<div class="container">
-    <div class="sticky-top"> 
-    <div class="row">
-        <header class="col-sm-12 text-white rounded-4 d-flex align-items-center justify-content-center rounded header-con-imagen">   
-            <h1 class="visually-hidden">HORIZONTE NÓMADA</h1>
-        </header>
-    </div>
-        <div class="row ">
-            <nav class="navbar navbar-expand-lg navbar-light bg-secondary rounded ">
-                <div class="container-fluid">
-                    <a class="navbar-brand text-warning" href="#">H. NOMADA</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown " aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item text-warning">
-                                        <a class="nav-link text-warning" href="#servicios">Servicios</a>
-                                    </li>
-                                    <li class="nav-item text-warning">
-                                        <a class="nav-link text-warning" href="#Marcas">Marcas</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-warning" href="#testimonios">Testimonios</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-warning" href="#contacto">Contacto</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mi cuenta</a>
-                                            <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdownMenuLink">
-                                                <li><a class="dropdown-item text-white" href="#">Iniciar sesion</a></li>
-                                                <li><a class="dropdown-item text-white" href="#">Registrese</a></li>
-                                                <li><a class="dropdown-item text-white" href="#">Salir Sesion</a></li>
-                                            </ul>
-                                    </li>
-                                </ul>
-                        </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Seccion de slider carrusel de imagenes tercer codigo  -->
-        <div class="row">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="static/img/Imagen Slider 1.jpeg" class="d-block w-100 rounded" alt=". . ."class="rounded 4">
-                    </div>
-
-                    <div class="carousel-item">
-                    <img src="static/img/Imagen Slider 2.jpeg" class="d-block w-100 rounded" alt="Imagen 2"class="rounded 6">
-                    </div>
-
-                    <div class="carousel-item">
-                    <img src="static/img/CARRUSEL 1.png" class="d-block w-100 rounded" alt="img3"class="rounded 6">
-                    </div>
-                </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>    
-        </div>
-        <br>
-                <!-- Seccion de cards -->
-<section id="servicios" class="py-5 bg-dark rounded shadow-lg">
-    <div class="container">
-        <h2 class="text-center mb-5 text-white">NUESTROS PRODUCTOS</h2>
-        <div class="row justify-content-center">            
-            <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-                <div class="card h-100 shadow ">
-                    <img src="https://bicicletasymotos.com/cdn/shop/files/73-3613_907b2e02-d953-4296-961a-25de7d66e8cc.webp?v=1750169321" class="card-img-top" alt="Casco de moto certificado de seguridad">
-                    <div class="card-body d-flex flex-column">
-                        <h3 class="card-title fw-bold">Cascos Certificados</h3>
-                        <p class="card-text">Si buscas el equipo perfecto, has llegado al lugar correcto. Contamos con una gran variedad de cascos certificados para que encuentres el estilo y el ajuste ideal.</p>
-                        <a href="http://127.0.0.1:5501/templates/Cascos.html" class="btn btn-warning mt-auto">Ver Productos</a>
-                    </div>
-                </div> 
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-                <div class="card h-100 shadow">
-                    <img src="https://enmoto.co/cdn/shop/files/Leatt_Gloves_ADV_X-Flow_7.5_Short_Stealth_Pair_6024040760.webp?v=1735264534&width=600" class="card-img-top" alt="Guantes protectores de moto">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title fw-bold">Guantes Protectores</h5>
-                        <p class="card-text">Tus manos merecen la mejor defensa: descubre nuestra colección de guantes de moto con certificación de seguridad, diseñados para resistir y proteger en cada trayecto.</p>
-                        <a href="http://127.0.0.1:5501/templates/Guantes.html" class="btn btn-warning mt-auto">Ver Productos</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-                <div class="card h-100 shadow">
-                    <img src="https://s7g10.scene7.com/is/image/ktm/jacket-full-square-rdw?fmt=png-alpha&wid=1000&dpr=off" class="card-img-top" alt="Chaqueta impermeable para motociclista">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title fw-bold">Impermeables</h5>
-                        <p class="card-text">Mantente seco sin sacrificar la comodidad. Descubre nuestros trajes y chaquetas impermeables ultraligeros y fáciles de guardar, diseñados para el motociclista que siempre está en movimiento.</p>
-                        <a href="http://127.0.0.1:5501/templates/Impermehables.html" class="btn btn-warning mt-auto">Ver Productos</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-                <div class="card h-100 shadow">
-                    <img src="https://212global.com/wp-content/uploads/2024/06/643b2e5ba44af2a32e33444c_thumbnail.png" class="card-img-top" alt="Envases de aceite y lubricantes para motor">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title fw-bold">Aceites y Lubricantes</h5>
-                        <p class="card-text">Maximiza el rendimiento y la vida útil de tu motor con nuestra selección premium de aceites y lubricantes. Solo lo mejor para tu máquina nómada.</p>
-                        <a href="http://127.0.0.1:5501/templates/Aceites.html" class="btn btn-warning mt-auto">Comprar Ahora</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<br>
-    <!-- SECCION DE CARDS LOGOS DE EMPRESA -->
-    <!-- section.bg-secondary>div.container>h2+div.marquee>div.marquee-content>img*5 -->
-<section id="Marcas" class="bg-dark py-5 text-white shadow-lg">
-    <div class="container">
-        <h2 class="text-center mb-4 fw-bold">NUESTRAS MARCAS ASOCIADAS</h2>
-        <div class="my-4"></div>
-        <div class="marquee overflow-hidden">
-            <div class="marquee-content d-flex align-items-center">
-                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/e7d2bb36972669.Y3JvcCwzMjk5LDI1NzgsMCwyNTE.png" alt="Logo de la marca Impercap" class="mx-4 opacity-75" height="50">
-                <img src="https://motozonecolombia.com/wp-content/uploads/2023/09/logo-motozone-1.png" alt="Logo de la marca Moto Zone" class="mx-4 opacity-75" height="50">
-                <img src="https://motospedia.com/imagenes/Ropa-de-motos-1024x640.png" alt="Logo de marca de ropa para motos Alpin" class="mx-4 opacity-75" height="50">
-                <img src="https://motulegypt.com/wp-content/uploads/2024/09/CAR-STICKER.png" alt="Logo de la marca Motul Lubricantes" class="mx-4 opacity-75" height="50">
-                <img src="https://gxmotor.co/cdn/shop/files/Everest_C1.png?v=1691591934" alt="Logo de la marca Everestt" class="mx-4 opacity-75" height="50">
-                <img src="https://motosport.com.ar/wp-content/uploads/2024/09/Fox-Racing-Logo.png" alt="Logo de la marca Fox Racing" class="mx-4 opacity-75" height="50">
-                
-                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/e7d2bb36972669.Y3JvcCwzMjk5LDI1NzgsMCwyNTE.png" alt="Logo de la marca Impercap (Copia)" class="mx-4 opacity-75" height="50">
-                <img src="https://motozonecolombia.com/wp-content/uploads/2023/09/logo-motozone-1.png" alt="Logo de la marca Moto Zone (Copia)" class="mx-4 opacity-75" height="50">
-                <img src="https://motospedia.com/imagenes/Ropa-de-motos-1024x640.png" alt="Logo de marca de ropa para motos Alpin (Copia)" class="mx-4 opacity-75" height="50">
-                <img src="https://motulegypt.com/wp-content/uploads/2024/09/CAR-STICKER.png" alt="Logo de la marca Motul Lubricantes (Copia)" class="mx-4 opacity-75" height="50">
-                <img src="https://gxmotor.co/cdn/shop/files/Everest_C1.png?v=1691591934" alt="Logo de la marca Everestt (Copia)" class="mx-4 opacity-75" height="50">
-                <img src="https://motosport.com.ar/wp-content/uploads/2024/09/Fox-Racing-Logo.png" alt="Logo de la marca Fox Racing (Copia)" class="mx-4 opacity-75" height="50">
-            </div>
-        </div>
-    </div>
-</section>
-<br>
-<section class="bg-secondary  text-white shadow-lg">
-    <div class="container">
-        </div>
-</section>
-<!-- seccion de video -->
-<section class="py-5 bg-dark">
-    <div class="container">
-        <h2 class="text-center text-white mb-4 fw-bold">RECOMENDACIONES</h2>
-        
-        <div class="row">
-            
-            <div class="col-sm-12 col-md-6 mb-4">
-                <h3 class="text-white mb-3 fw-normal fs-5 text-center">Video 1: Presentación</h3>
-                <div class="ratio ratio-16x9 shadow-lg rounded">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5KbROPmuPfg?si=_EQ3M7pu991bWMB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 mb-4">
-                <h3 class="text-white mb-3 fw-normal fs-5 text-center">Video 2: Novedades</h3>
-                <div class="ratio ratio-16x9 shadow-lg rounded">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EL1wWY5gr_g?si=XJTF_xEL24E8PHkF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-<br>
-<section id="testimonios" class=" bg-dark text-white rounded shadow-lg">
-    </section>
-<!-- Sección testimonios -->
-<!-- section#testimonios>div.container>h2+div.row Funsion -->
-<section id="testimonios" class="py-5 bg-dark text-white rounded shadow-lg">
-    <div class="container">
-        <h2 class="text-center mb-5">TESTIMONIOS</h2> 
-            
-        <div class="row">
-            
-            <div class="col-md-6 mb-4">
-                <div class="testimonial p-4 bg-white rounded shadow-sm text-center text-dark "> 
-                    <p class="fst-italic">"Excelente servicio, me ayudaron a resolver todos mis problemas con el mantenimiento de mi Moto."</p>
-                    <strong class="text-warning mt-2 d-block">Cindy Orozco</strong>
-                </div>
-            </div>
-            
-            <div class="col-md-6 mb-4">
-                <div class="testimonial p-4 bg-white rounded shadow-sm text-center text-dark">
-                    <p class="fst-italic">"Excelentes producto y muy buna calidad."</p>
-                    <strong class="text-warning mt-2 d-block">Sandro Avella</strong>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-<br>
-<section class="py-5 bg-dark">
-    <div class="container">
-        <h2 class="text-center text-white mb-5 fw-bold  text-center">GUÍA DE CASCOS CERTIFICADOS</h2>
-            <div class="row mb-5">
-            <div class="col-12">
-                <h3 class="text-white mb-3">Tallas Estándar (Medida en cm)</h3>
-                <div class="table-responsive">
-                    <table class="table table-dark table-striped table-bordered text-center shadow-lg">
-                        <thead>
-                            <tr class="table-warning text-dark">
-                                <th>Talla</th>
-                                <th>Circunferencia de la Cabeza (cm)</th>
-                                <th>Circunferencia de la Cabeza (in)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>**XS**</td>
-                                <td>53-54 cm</td>
-                                <td>20.8" - 21.2"</td>
-                            </tr>
-                            <tr>
-                                <td>**S**</td>
-                                <td>55 - 56 cm</td>
-                                <td>21.6" - 22.0"</td>
-                            </tr>
-                            <tr>
-                                <td>**M**</td>
-                                <td>57 - 58 cm</td>
-                                <td>22.4" - 22.8"</td>
-                            </tr>
-                            <tr>
-                                <td>**L**</td>
-                                <td>59 - 60 cm</td>
-                                <td>23.2" - 23.6"</td>
-                            </tr>
-                            <tr>
-                                <td>**XL**</td>
-                                <td>61 - 62 cm</td>
-                                <td>24.0" - 24.4"</td>
-                            </tr>
-                            <tr>
-                                <td>**XXL**</td>
-                                <td>63 - 64 cm</td>
-                                <td>24.8" - 25.2"</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3 class="text-white mb-3">Certificaciones de Seguridad Global</h3>
-                <div class="table-responsive">
-                    <table class="table table-dark table-striped table-bordered text-white shadow-lg">
-                        <thead>
-                            <tr class="table-warning text-dark">
-                                <th>Certificación</th>
-                                <th>Origen</th>
-                                <th>Descripción de la Norma</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>**ECE 22.05 / 22.06**</td>
-                                <td>Unión Europea</td>
-                                <td>Estándar internacional para pruebas de impacto, rigidez y retención. El **22.06** es el más reciente y riguroso.</td>
-                            </tr>
-                            <tr>
-                                <td>**DOT FMVSS 218**</td>
-                                <td>Estados Unidos</td>
-                                <td>Certificación federal enfocada en la absorción de energía y resistencia a la penetración.</td>
-                            </tr>
-                            <tr>
-                                <td>**SNELL**</td>
-                                <td>Fundación Privada (EE. UU.)</td>
-                                <td>Pruebas de impacto más exigentes (incluyendo **impacto múltiple**) y usadas a menudo como estándar para competición.</td>
-                            </tr>
-                            <tr>
-                                <td>**NTC 4533**</td>
-                                <td>Colombia</td>
-                                <td>Norma nacional que exige el cumplimiento de un estándar internacional (como ECE o DOT) para la venta legal en el país.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<br>
-<!-- SECCION DE FORMULARIO DE CNTACTO Y MAPA DE UBUCACION -->
-<!-- section#contacto>div.container>div.row>h2+div.col-md-6 -->
-<section id="contacto" class="py-5 bg-dark">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2 class="text-center text-white mb-4">Contactanos</h2>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    <br>
-                    <input type="button" value="Enviar" class="form-control bg-warning text-black">
-                </div>                
-            </div>
-<!-- MAPA DE UBICACION DE LA EMPRESA -->
-<!-- div.col-md-6>h2.text-white -->
-            <div class="col-md-6">  <h2 class="text-white mb-4 text-center">Nuestra ubicacion</h2> 
-                <div style="height: 350px;"> 
-                    <iframe src="https://www.google.com/maps/embed?..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-</section>
-<br>
-<!-- SECCION DE REDES SOCIALES -->
-<!-- footer.bg-dark>p+div.social-icons>a*4 -->
-<footer class="bg-dark text-white text-center py-4">
-    <p class="mb-2">&copy;@Milton Avella Carraza y Cindy Martinez Orozco. Horizante Nomada.  Todos los derechos recervados</p>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://x.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://co.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-</footer>
-
-</div>
-    <!-- Link bootstrap js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-</body>
-</html>
+    <div class="container">
+    <div class="sticky-top"> 
+    <div class="row">
+        <header class="col-sm-12 text-white rounded-4 d-flex align-items-center justify-content-center rounded header-con-imagen">   
+            <h1 class="visually-hidden">HORIZONTE NÓMADA</h1>
+        </header>
+    </div>
+        <div class="row ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-secondary rounded ">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-warning" href="#">H. NOMADA</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown " aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item text-warning">
+                                        <a class="nav-link text-warning" href="#servicios">Servicios</a>
+                                    </li>
+                                    <li class="nav-item text-warning">
+                                        <a class="nav-link text-warning" href="#Marcas">Marcas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-warning" href="#testimonios">Testimonios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-warning" href="#contacto">Contacto</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mi cuenta</a>
+                                            <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdownMenuLink">
+                                                <li><a class="dropdown-item text-white" href="#">Iniciar sesion</a></li>
+                                                <li><a class="dropdown-item text-white" href="#">Registrese</a></li>
+                                                <li><a class="dropdown-item text-white" href="#">Salir Sesion</a></li>
+                                            </ul>
+                                    </li>
+                                </ul>
+                        </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+            <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
