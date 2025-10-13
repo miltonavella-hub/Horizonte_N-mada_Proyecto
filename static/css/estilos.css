@@ -1,0 +1,133 @@
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.header-con-imagen {
+    background-image: url(../img/Encabezado1.png);
+    min-height: 150px;
+    padding: 20px 0;
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    padding: 30px;
+    
+    
+}
+body {
+    
+    min-height: 100vh; 
+    background-image: url(../img/imagendefondo2.png);
+    margin: 0; 
+    height: 100%; 
+    background-color: #000000; 
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding-top: 56px;
+}
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+:root {
+    --altura-fija-menu: 180px; 
+}
+
+#servicios {
+    scroll-margin-top: var(--altura-fija-menu);
+}
+#Marcas {
+    scroll-margin-top: var(--altura-fija-menu);
+}
+#testimonios {
+    scroll-margin-top: var(--altura-fija-menu);
+}
+
+#contacto {
+    scroll-margin-top: var(--altura-fija-menu);
+}
+
+.bg-dark {
+    /* El valor de transparencia (0.8) es ajustable (entre 0.0 y 1.0) */
+    background-color: rgba(0, 0, 0, 0.5) !important; 
+}
+iframe {
+    width: 100%;
+    border: 5px;
+    height: 350px;
+}
+
+.marquee {
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-content img {
+    max-height: 50px;
+    object-fit: contain;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.carousel-inner .carousel-item img {
+    height: 55vh;
+    object-fit:cover;
+    width: 90vw;
+    
+}
+.navbar {
+    margin-top: 0px; 
+    background-color: rgba(68, 68, 68, 0.8);
+    border-radius: 5px;
+    }
+    
+.card-img-uniform {
+    /* Define una altura fija (puedes ajustarla) */
+    height: 200px; 
+    /* Asegura que la imagen cubra el área sin distorsionarse */
+    object-fit: cover; 
+    /* Añade un margen inferior para separarla del texto */
+    margin-bottom: 10px; 
+}
+/* 1. Cambia el color del texto y los iconos al pasar el cursor */
+.navbar-nav .nav-link:hover {
+    color: #fff !important; /* Cambia a blanco puro */
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo sutilmente oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: all 0.2s ease-in-out; /* Suaviza el cambio */
+}
+
+/* 2. Asegura que los enlaces del dropdown se vean bien al pasar el cursor */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ffc107; /* Color de advertencia de Bootstrap (Amarillo) */
+    color: #000 !important; /* Texto negro para contraste */
+}
+
+/* 3. Estilo opcional para el icono de la marca */
+.navbar-brand .fa-solid {
+    margin-right: 5px;
+    }
+
+    
+    
